@@ -228,11 +228,11 @@ int main() {
     int flag = 0, i = 0;
 
     printf("Enter the first string: ");
-    scanf("%[^\n]", c1);
+    scanf("%[^\n]s", c1);
     getchar(); // To consume the newline character left by scanf
 
     printf("Enter the second string: ");
-    scanf("%s", c2);
+    scanf("%[^\n]s", c2);
 
     while (c1[i] != '\0' && c2[i] != '\0') {
         if (c1[i] != c2[i]) {
